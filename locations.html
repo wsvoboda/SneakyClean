@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="locations.css">
-    <script src="config.js"></script>
-    <script src="locations.js"></script>
+    <!-- <script src="config.js"></script> -->
+    
     
     <title>Locations</title>
   </head>
@@ -20,13 +20,9 @@
       </div>
       <div class="store-locator">
         <h2>Enter your zip code to see if we service your area.</h2>
-        <form>
-          <input type="text" name="zip-code" id="zip-code" /><button
-            type="submit"
-          >
+        <input type="text" class="zip-code" /><button class="zip-search-button">
             Go
           </button>
-        </form>
         <p class="zip-query-answer"></p>
       </div>
       <div class="maps">
@@ -43,5 +39,5 @@
       async
     ></script> -->
   </body>
-
+<script src="locations.js"></script>
 </html>
