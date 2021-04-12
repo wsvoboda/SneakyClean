@@ -1,4 +1,4 @@
-const mykey = config.API;
+const myKey = config.API;
 
 // function initMap() {
 //   const sneakyCleanHouston = { lat: 29.795, lng: -95.569 };
