@@ -4,8 +4,29 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link rel="stylesheet" href="locations.css">
+<!-- <link rel="stylesheet" href="locations.css"> -->
     <script src="locations.js"></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #houston-map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 40%;
+        /* The width is the width of the web page */
+      }
+      #atlanta-map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 40%;
+        /* The width is the width of the web page */
+      }
+      #tampa-map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 40%;
+        /* The width is the width of the web page */
+      }
+    </style>
     <title>Locations</title>
   </head>
   <body>
@@ -28,14 +49,18 @@
         <p class="zip-query-answer"></p>
       </div>
       <div class="maps">
-        <h2>Houston</h2>
-        <img src="" alt="interactive-houston-map" />
-        <h2>Atlanta</h2>
-        <img src="" alt="interactive-atlanta-map" />
-        <h2>Tampa</h2>
-        <img src="" alt="interactive-tampa-map" />
+        <h2>Houston Location</h2>
+        <div id="houston-map"></div>
+        <h2>Atlanta Location</h2>
+        <div id="atlanta-map"></div>
+        <h2>Tampa Location</h2>
+        <div id="tampa-map"></div>
       </div>
     </div>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDRK_-WOLwaRVJOphAT3UweFYfAUV7MHfA&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
   </body>
 
 </html>
