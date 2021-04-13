@@ -44,7 +44,7 @@
     <div class="container-lg text-center" id="main-container">
       <div class="services-cards">
         <h2>
-          We provide top-quality cleaning services to the following types of
+          We provide top-quality cleaning services for the following types of
           shoes
         </h2>
         <div class="row">
@@ -156,56 +156,186 @@
           </div>
         </div>
       </div>
-      <fieldset>
-        <form>
-          <h2>Choose Service:</h2>
-          <input type="checkbox" name="sneakers" id="sneakers" /><label
-            for="sneakers"
-            >Sneakers</label
-          >
-
-          <input type="checkbox" name="heels" id="heels" /><label for="heels"
-            >Heels</label
-          >
-
-          <input type="checkbox" name="flip-flops" id="flip-flops" /><label
-            for="flip-flops"
-            >Flip Flops</label
-          >
-
-          <input type="checkbox" name="slippers" id="slippers" /><label
-            for="slippers"
-            >Slippers</label
-          >
-
-          <input type="checkbox" name="work-boots" id="work-boots" /><label
-            for="work-boots"
-            >Work Boots</label
-          >
-
-          <input type="checkbox" name="collectables" id="collectables" /><label
-            for="collectables"
-            >Collectables</label
-          >
-          <h3>Add Ons:</h3>
-          <input type="checkbox" name="heel-repair" id="heel-repair" /><label
-            for="heel-repair"
-            >Heel Repair</label
-          >
+      <form id="order-form" class="row g-2">
+        <fieldset>
+          <legend>Order Form</legend>
+          <h5>Contact Information</h5>
+        <div class="col-md-5">
+          <label for="firstname" class="form-label">First Name</label>
+          <input type="text" class="form-control" id="firstname" />
+        </div>
+        <div class="col-md-5">
+          <label for="lastname" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="lastname" />
+        </div>
+        <div class="col-10">
+          <label for="inputAddress" class="form-label">Address</label>
+          <input type="text" class="form-control" id="inputAddress" />
+        </div>
+        <div class="col-10">
+          <label for="inputAddress2" class="form-label">Address 2</label>
+          <input type="text" class="form-control" id="inputAddress2" />
+        </div>
+        <div class="col-md-5">
+          <label for="inputCity" class="form-label">City</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-3">
+          <label for="inputState" class="form-label">State</label>
+          <input type="text" class="form-control" id="state" />
+        </div>
+        <div class="col-md-3">
+          <label for="inputZip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+        <h5>Services Requested</h5>
+        <div class="form-check">
           <input
+            class="form-check-input"
             type="checkbox"
-            name="stitch-repair"
-            id="stitch-repair"
-          /><label for="stitch-repair">Stitch Repair</label>
-          <input type="checkbox" name="scent" id="scent" /><label for="scent"
-            >Scent Infusion</label
-          ><br /><button type="submit">Submit Order</button>
-        </form>
-      </fieldset>
+            value=""
+            id="defaultCheck1"
+          />
+          <label class="form-check-label" for="defaultCheck1"> Sneakers </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck2"
+          />
+          <label class="form-check-label" for="defaultCheck2">
+            High Heels
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck3"
+          />
+          <label class="form-check-label" for="defaultCheck3">
+            Flip Flops
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck4"
+          />
+          <label class="form-check-label" for="defaultCheck4"> Slippers </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck5"
+          />
+          <label class="form-check-label" for="defaultCheck5">
+            Work Boots
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck6"
+          />
+          <label class="form-check-label" for="defaultCheck6">
+            Collectables
+          </label>
+        </div>
+        <h5>Extras</h5>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck7"
+          />
+          <label class="form-check-label" for="defaultCheck7">
+            Heel Repair
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck8"
+          />
+          <label class="form-check-label" for="defaultCheck8">
+            Stitch Repair
+          </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="checkbox"
+            value=""
+            id="defaultCheck9"
+          />
+          <label class="form-check-label" for="defaultCheck9">
+            Scent Infusion
+          </label>
+          </div>
+          <h5>Location</h5>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              value="houston"
+              id="radio1"
+              name="location"
+            />
+            <label class="form-check-label" for="radio1">
+              Houston
+            </label>
+          
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            value="atlanta"
+            id="radio2"
+            name="location"
+          />
+          <label class="form-check-label" for="radio2">
+            Atlanta
+          </label>
+        
+      </div>
+      <div class="form-check">
+        <input
+          class="form-check-input"
+          type="radio"
+          value="tampa"
+          id="radio3"
+          name="location"
+        />
+        <label class="form-check-label" for="radio3">
+          Tampa
+        </label>
+      
+    </div>
+        <div class="col-12">
+          <button type="submit" class="btn btn-outline-primary">
+            Submit Order
+          </button>      
+      </div>
       <div id="order-confirmation">
         <p id="confirmation"></p>
       </div>
     </div>
+  </fieldset>
+</form>
   </body>
   <script src="services.js"></script>
 </html>
