@@ -110,26 +110,33 @@ const getTampaTeamInfo = async () => {
   const teamMembersForSite = await allTeamMembers.json();
   for (let i = 0; i < 6; i++) {
     const teamMemberCard = document.createElement("div");
+    teamMemberCard.className = "card";
+    teamMemberCard.style.width = "18rem";
     const teamMemberImage = document.createElement("img");
-    const teamMemberName = document.createElement("h3");
-    const teamMemberTitle = document.createElement("h4");
+    teamMemberImage.className = "card-img-top";
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+    const nameHolder = document.createElement("h5");
+    nameHolder.className = "card-title";
+    const createList = document.createElement("ul");
+    createList.className = "list-group list-group-flush";
+    const jobTitleHolder = document.createElement("li");
+    jobTitleHolder.className = "list-group-item";
+    const aboutMeHolder = document.createElement("li");
+    aboutMeHolder.className = "list-group-item";
     const firstName = teamMembersForSite.results[i].name.first;
     const lastName = teamMembersForSite.results[i].name.last;
     const image = teamMembersForSite.results[i].picture.large;
     const fullName = `${firstName} ${lastName}`;
-    teamMemberName.innerHTML = fullName;
-    teamMemberImage.src = image;
-    const teamMemberAboutMe = document.createElement("h4");
     const jobTitle = jobTitles[i];
     const aboutMe = aboutMeSnippits[i];
-    teamMemberAboutMe.innerHTML = aboutMe;
-    teamMemberTitle.innerHTML = jobTitle;
-    teamMemberCard.append(
-      teamMemberImage,
-      teamMemberName,
-      teamMemberTitle,
-      teamMemberAboutMe
-    );
+    aboutMeHolder.innerHTML = aboutMe;
+    jobTitleHolder.innerHTML = jobTitle;
+    createList.append(jobTitleHolder, aboutMeHolder);
+    nameHolder.innerHTML = fullName;
+    cardBody.append(nameHolder);
+    teamMemberImage.src = image;
+    teamMemberCard.append(teamMemberImage, cardBody, createList);
     teamCardsHolder.append(teamMemberCard);
   }
 };
