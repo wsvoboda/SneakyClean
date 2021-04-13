@@ -17,3 +17,7 @@
 .nav-link {
   color: black;
 }
+
+input[type="text"] {
+  margin-right: 5px;
+}
