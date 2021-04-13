@@ -1,3 +1,19 @@
 .nav-link {
   color: black;
 }
+
+#arrow {
+  width: 140px;
+  height: 100px;
+}
+
+#stars {
+  width: 120px;
+  height: 80px;
+}
+
+.logos {
+  height: 25px;
+  width: 25px;
+  margin: 5px;
+}
