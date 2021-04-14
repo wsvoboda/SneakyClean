@@ -49,11 +49,13 @@ const checkZipHouston = async () => {
   const distanceValue = await distanceArray.json();
   const distanceToLocation = distanceValue.distance; // gives distance in miles
   if (distanceToLocation <= 50) {
-    houstonZipResponse.innerHTML = "We service your area!";
+    houstonZipResponse.innerHTML = "&#127881; We service your area! &#127881;";
   } else if (distanceToLocation > 50) {
-    houstonZipResponse.innerHTML = "We don't service your area.";
+    houstonZipResponse.innerHTML =
+      "&#128546; We don't service your area... yet! &#128546;";
   } else {
-    houstonZipResponse.innerHTML = "Please enter a valid zip code";
+    houstonZipResponse.innerHTML =
+      "&#9940; Please enter a valid zip code &#9940;";
   }
 };
 
@@ -74,11 +76,13 @@ const checkZipAtlanta = async () => {
   const distanceValue = await distanceArray.json();
   const distanceToLocation = distanceValue.distance; // gives distance in miles
   if (distanceToLocation <= 50) {
-    atlantaZipResponse.innerHTML = "We service your area!";
+    atlantaZipResponse.innerHTML = "&#127881; We service your area! &#127881;";
   } else if (distanceToLocation > 50) {
-    atlantaZipResponse.innerHTML = "We don't service your area.";
+    atlantaZipResponse.innerHTML =
+      "&#128546; We don't service your area... yet! &#128546;";
   } else {
-    atlantaZipResponse.innerHTML = "Please enter a valid zip code";
+    atlantaZipResponse.innerHTML =
+      "&#9940; Please enter a valid zip code &#9940;";
   }
 };
 
@@ -97,11 +101,13 @@ const checkZipTampa = async () => {
   const distanceValue = await distanceArray.json();
   const distanceToLocation = distanceValue.distance; // gives distance in miles
   if (distanceToLocation <= 50) {
-    tampaZipResponse.innerHTML = "We service your area!";
+    tampaZipResponse.innerHTML = "&#127881; We service your area! &#127881;";
   } else if (distanceToLocation > 50) {
-    tampaZipResponse.innerHTML = "We don't service your area.";
+    tampaZipResponse.innerHTML =
+      "&#128546; We don't service your area... yet! &#128546;";
   } else {
-    tampaZipResponse.innerHTML = "Please enter a valid zip code";
+    tampaZipResponse.innerHTML =
+      "&#9940; Please enter a valid zip code &#9940;";
   }
 };
 
