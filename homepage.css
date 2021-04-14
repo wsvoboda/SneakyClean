@@ -27,3 +27,12 @@ img {
 h3 {
   margin: 20px 200px;
 }
+
+#locations {
+  text-align: end;
+}
+
+#reviews {
+  width: 100%;
+  height: 5%;
+}
