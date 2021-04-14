@@ -4,6 +4,7 @@
 
 .card-img-top {
   border-radius: 100%;
+  padding: 5px;
 }
 
 .card {

@@ -21,3 +21,11 @@
 input[type="text"] {
   margin-right: 5px;
 }
+
+p {
+  margin-top: 10px;
+}
+
+button {
+  border-radius: 4px;
+}
