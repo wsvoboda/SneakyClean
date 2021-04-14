@@ -2,7 +2,7 @@
   color: black;
 }
 
-#arrow {
+.arrow {
   width: 140px;
   height: 100px;
 }
@@ -16,4 +16,13 @@
   height: 25px;
   width: 25px;
   margin: 5px;
+}
+
+img {
+  height: 230px;
+  width: 230px;
+}
+
+h3 {
+  margin: 20px 200px;
 }
