@@ -73,6 +73,16 @@ header {
     height: 175px;
     width: 250px;
     border-radius: 3px;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  #all-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
   }
 }
 
