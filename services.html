@@ -41,14 +41,14 @@
         </ul>
       </header>
     </div>
+
     <div class="container-lg text-center" id="main-container">
-      
         <h2>
           We provide top-quality cleaning services for the following types of
           shoes
-        </h2><div class="services-cards">
+        </h2>
+  
         <div class="d-flex align-items-center flex-wrap justify-content-center">
-         
             <div class="card" style="width: 18rem">
               <img
                 src="./images/sneakers.png"
@@ -81,8 +81,7 @@
                 <li class="list-group-item">All Heel Heights and Types</li>
                 <li class="list-group-item">$15 per pair</li>
               </ul>
-            
-          </div>
+            </div>
         
             <div class="card" style="width: 18rem">
               <img
@@ -99,10 +98,7 @@
                 <li class="list-group-item">$8 per pair</li>
               </ul>
             </div>
-          
-       
-        
-         
+                   
             <div class="card" style="width: 18rem">
               <img
                 src="./images/slippers.png"
@@ -118,7 +114,6 @@
                 <li class="list-group-item">$18 per pair</li>
               </ul>
             </div>
-       
          
             <div class="card" style="width: 18rem">
               <img
@@ -136,7 +131,6 @@
               </ul>
             </div>
           
-          
             <div class="card" style="width: 18rem">
               <img
                 src="./images/collectable.png"
@@ -153,13 +147,13 @@
                 <li class="list-group-item">$40 per pair</li>
               </ul>
             </div>
-          </div>
-        
+        </div>        
     
       <form id="order-form" class="row g-2">
-        <fieldset>
-          <legend>Order Form</legend>
+          <h2>Order Form</h2>
+          <hr>
           <h5>Contact Information</h5>
+      <div class="contact-info">
         <div class="col-md-5">
           <label for="firstname" class="form-label">First Name</label>
           <input type="text" class="form-control" id="firstname" />
@@ -180,7 +174,7 @@
           <label for="inputCity" class="form-label">City</label>
           <input type="text" class="form-control" id="inputCity" />
         </div>
-        <div class="col-md-3">
+        <div class="col-md-2">
           <label for="inputState" class="form-label">State</label>
           <input type="text" class="form-control" id="state" />
         </div>
@@ -188,7 +182,10 @@
           <label for="inputZip" class="form-label">Zip</label>
           <input type="text" class="form-control" id="inputZip" />
         </div>
+      </div>
+      <hr>
         <h5>Services Requested</h5>
+        <div class="services-selection">
         <div class="form-check">
           <input
             class="form-check-input"
@@ -284,47 +281,25 @@
           <label class="form-check-label" for="defaultCheck9">
             Scent Infusion
           </label>
-          </div>
-          <h5>Location</h5>
-          <div class="form-check">
-            <input
-              class="form-check-input"
-              type="radio"
-              value="houston"
-              id="radio1"
-              name="location"
-            />
-            <label class="form-check-label" for="radio1">
-              Houston
-            </label>
-          
         </div>
-        <div class="form-check">
-          <input
-            class="form-check-input"
-            type="radio"
-            value="atlanta"
-            id="radio2"
-            name="location"
-          />
-          <label class="form-check-label" for="radio2">
-            Atlanta
-          </label>
-        
-      </div>
-      <div class="form-check">
-        <input
-          class="form-check-input"
-          type="radio"
-          value="tampa"
-          id="radio3"
-          name="location"
-        />
-        <label class="form-check-label" for="radio3">
-          Tampa
-        </label>
-      
-    </div>
+        </div>
+        <hr>
+          <h5>Location</h5>
+          <div class="location-selection">
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="locations" id="inlineRadio1" value="houston">
+              <label class="form-check-label" for="houston">Houston</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="locations" id="inlineRadio2" value="atlanta">
+              <label class="form-check-label" for="atlanta">Atlanta</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="locations" id="inlineRadio3" value="tampa" >
+              <label class="form-check-label" for="tampa">Tampa</label>
+            </div>
+          <hr>
+          </div>
         <div class="col-12">
           <button type="submit" class="btn btn-outline-primary">
             Submit Order
@@ -334,7 +309,7 @@
         <p id="confirmation"></p>
       </div>
     </div>
-  </fieldset>
+  
 </form>
   </body>
   <script src="services.js"></script>
