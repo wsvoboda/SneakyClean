@@ -1,3 +1,17 @@
 .nav-link {
   color: black;
 }
+
+.card-img-top {
+  border-radius: 100%;
+}
+
+.card {
+  height: 410px;
+  margin: 10px;
+}
+
+#about-me-box {
+  height: 64px;
+  margin: auto;
+}

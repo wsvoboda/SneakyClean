@@ -36,7 +36,7 @@ const getTeamInfo = async () => {
   for (let i = 0; i < 8; i++) {
     const teamMemberCard = document.createElement("div");
     teamMemberCard.className = "card";
-    teamMemberCard.style.width = "18rem";
+    teamMemberCard.style.width = "15rem";
     const teamMemberImage = document.createElement("img");
     teamMemberImage.className = "card-img-top";
     const cardBody = document.createElement("div");
@@ -49,6 +49,7 @@ const getTeamInfo = async () => {
     jobTitleHolder.className = "list-group-item";
     const aboutMeHolder = document.createElement("li");
     aboutMeHolder.className = "list-group-item";
+    aboutMeHolder.id = "about-me-box";
     const firstName = teamMembersForSite.results[i].name.first;
     const lastName = teamMembersForSite.results[i].name.last;
     const image = teamMembersForSite.results[i].picture.large;
@@ -77,7 +78,7 @@ const getTampaTeamInfo = async () => {
   for (let i = 0; i < 6; i++) {
     const teamMemberCard = document.createElement("div");
     teamMemberCard.className = "card";
-    teamMemberCard.style.width = "18rem";
+    teamMemberCard.style.width = "15rem";
     const teamMemberImage = document.createElement("img");
     teamMemberImage.className = "card-img-top";
     const cardBody = document.createElement("div");
@@ -90,6 +91,7 @@ const getTampaTeamInfo = async () => {
     jobTitleHolder.className = "list-group-item";
     const aboutMeHolder = document.createElement("li");
     aboutMeHolder.className = "list-group-item";
+    aboutMeHolder.id = "about-me-box";
     const firstName = teamMembersForSite.results[i].name.first;
     const lastName = teamMembersForSite.results[i].name.last;
     const image = teamMembersForSite.results[i].picture.large;
