@@ -10,6 +10,9 @@
 .card {
   height: 410px;
   margin: 10px;
+  -webkit-box-shadow: 0 10px 6px -6px #777;
+  -moz-box-shadow: 0 10px 6px -6px #777;
+  box-shadow: 0 10px 6px -6px #777;
 }
 
 #about-me-box {
@@ -19,4 +22,14 @@
 
 button {
   margin: 10px;
+}
+header {
+  -webkit-box-shadow: 0 5px 3px -3px #777;
+  -moz-box-shadow: 0 5px 3px -3px #777;
+  box-shadow: 0 5px 3px -3px #777;
+}
+
+#logo {
+  height: 32px;
+  width: 81px;
 }
