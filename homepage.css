@@ -47,3 +47,11 @@ header {
   height: 32px;
   width: 81px;
 }
+
+#all-reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+}
