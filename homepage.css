@@ -69,13 +69,26 @@ header {
   h5 {
     font-size: 16px;
   }
+
   img {
     height: 175px;
     width: 250px;
     border-radius: 3px;
-    text-align: center;
-    align-items: center;
+  }
+
+  #sneaks {
     margin: auto;
+    align-items: center;
+  }
+
+  #workboots {
+    margin: auto;
+    align-items: center;
+  }
+
+  #booties {
+    margin: auto;
+    align-items: center;
   }
 
   #all-reviews {
@@ -83,6 +96,14 @@ header {
     flex-wrap: wrap;
     text-align: center;
     align-items: center;
+  }
+
+  .lead {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
   }
 }
 
