@@ -55,3 +55,35 @@ header {
   text-align: center;
   align-items: center;
 }
+
+/* styling for smartphone */
+@media screen and (max-width: 415px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+  img {
+    height: 175px;
+    width: 250px;
+    border-radius: 3px;
+  }
+}
+
+/* styling for Galaxy Fold  */
+
+@media screen and (max-width: 281px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+}
