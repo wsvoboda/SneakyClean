@@ -117,4 +117,48 @@ header {
   .nav-link {
     font-size: 14px;
   }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+
+  img {
+    height: 140px;
+    width: 200px;
+    border-radius: 3px;
+  }
+
+  #sneaks {
+    margin: auto;
+    align-items: center;
+  }
+
+  #workboots {
+    margin: auto;
+    align-items: center;
+  }
+
+  #booties {
+    margin: auto;
+    align-items: center;
+  }
+
+  #all-reviews {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    align-items: center;
+  }
+
+  .lead {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
 }
