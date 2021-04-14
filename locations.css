@@ -1,17 +1,17 @@
 #houston-map {
   height: 400px;
-
   width: 40%;
+  margin-left: 20px;
 }
 #atlanta-map {
   height: 400px;
-
   width: 40%;
+  margin-left: 20px;
 }
 #tampa-map {
   height: 400px;
-
   width: 40%;
+  margin-left: 20px;
 }
 
 .nav-link {
@@ -34,6 +34,10 @@ h5 {
   margin: 20px;
 }
 
+h2 {
+  margin: 30px;
+}
+
 header {
   -webkit-box-shadow: 0 5px 3px -3px #777;
   -moz-box-shadow: 0 5px 3px -3px #777;
@@ -44,3 +48,30 @@ header {
   height: 32px;
   width: 81px;
 }
+
+/* styling for smartphone */
+@media screen and (max-width: 415px) {
+  h3 {
+    font-size: 20px;
+  }
+
+  h4 {
+    font-size: 16px;
+  }
+
+  h5 {
+    font-size: 16px;
+  }
+}
+
+/* styling for Galaxy Fold */
+/* @media screen and (max-width: 281px) {
+  h3 {
+    font-size: 16px;
+  }
+
+  .nav-link {
+    font-size: 14px;
+  }
+} */
+/* not yet working */
