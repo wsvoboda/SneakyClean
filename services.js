@@ -1,4 +1,4 @@
-const form = document.querySelector("form");
+const form = document.querySelector("#order-form");
 const confirmation = document.querySelector("#confirmation");
 
 const takeOrder = () => {
@@ -8,5 +8,6 @@ const takeOrder = () => {
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  form.reset();
   takeOrder();
 });
