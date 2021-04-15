@@ -3,7 +3,7 @@ const houstonButton = document.querySelector("#houston");
 const atlantaButton = document.querySelector("#atlanta");
 const tampaButton = document.querySelector("#tampa");
 
-const aboutMeSnippits = [
+const houstonAboutMeSnippits = [
   "I want you looking fly!",
   "I want you to smile!",
   "I care about customer service.",
@@ -12,6 +12,26 @@ const aboutMeSnippits = [
   "I'm a total clean freak!",
   "I excel in quality and precision.",
   "I do what's right.",
+];
+
+const atlantaAboutMeSnippits = [
+  "Change the world by being yourself!",
+  "I aspire to inspire.",
+  "My work is my passion.",
+  "I love polishing your shoe diamonds!",
+  "I am focused and driven!",
+  "I strive for greatness.",
+  "I'll care for your shoes like they're my own.",
+  "I'm proud of my work.",
+];
+
+const tampaAboutMeSnippits = [
+  "We are number 1!",
+  `'Shoes' is the answer to all questions.`,
+  "Nobody's perfect, but your shoes can be!",
+  "Stay fresh.",
+  "Stand out in the crowd.",
+  "#shoesonpoint",
 ];
 
 const jobTitles = [
@@ -25,7 +45,7 @@ const jobTitles = [
   "Restoration Engineer",
 ];
 
-const getTeamInfo = async () => {
+const getHoustonTeamInfo = async () => {
   if (teamCardsHolder !== 0) {
     teamCardsHolder.innerHTML = "";
   }
@@ -55,7 +75,49 @@ const getTeamInfo = async () => {
     const image = teamMembersForSite.results[i].picture.large;
     const fullName = `${firstName} ${lastName}`;
     const jobTitle = jobTitles[i];
-    const aboutMe = aboutMeSnippits[i];
+    const aboutMe = houstonAboutMeSnippits[i];
+    aboutMeHolder.innerHTML = aboutMe;
+    jobTitleHolder.innerHTML = jobTitle;
+    createList.append(jobTitleHolder, aboutMeHolder);
+    nameHolder.innerHTML = fullName;
+    cardBody.append(nameHolder);
+    teamMemberImage.src = image;
+    teamMemberCard.append(teamMemberImage, cardBody, createList);
+    teamCardsHolder.append(teamMemberCard);
+  }
+};
+
+const getAtlantaTeamInfo = async () => {
+  if (teamCardsHolder !== 0) {
+    teamCardsHolder.innerHTML = "";
+  }
+  const allTeamMembers = await fetch(
+    "https://randomuser.me/api/?inc=name,picture&results=8&nat=us"
+  );
+  const teamMembersForSite = await allTeamMembers.json();
+  for (let i = 0; i < 8; i++) {
+    const teamMemberCard = document.createElement("div");
+    teamMemberCard.className = "card";
+    teamMemberCard.style.width = "15rem";
+    const teamMemberImage = document.createElement("img");
+    teamMemberImage.className = "card-img-top";
+    const cardBody = document.createElement("div");
+    cardBody.className = "card-body";
+    const nameHolder = document.createElement("h5");
+    nameHolder.className = "card-title";
+    const createList = document.createElement("ul");
+    createList.className = "list-group list-group-flush";
+    const jobTitleHolder = document.createElement("li");
+    jobTitleHolder.className = "list-group-item";
+    const aboutMeHolder = document.createElement("li");
+    aboutMeHolder.className = "list-group-item";
+    aboutMeHolder.id = "about-me-box";
+    const firstName = teamMembersForSite.results[i].name.first;
+    const lastName = teamMembersForSite.results[i].name.last;
+    const image = teamMembersForSite.results[i].picture.large;
+    const fullName = `${firstName} ${lastName}`;
+    const jobTitle = jobTitles[i];
+    const aboutMe = atlantaAboutMeSnippits[i];
     aboutMeHolder.innerHTML = aboutMe;
     jobTitleHolder.innerHTML = jobTitle;
     createList.append(jobTitleHolder, aboutMeHolder);
@@ -97,7 +159,7 @@ const getTampaTeamInfo = async () => {
     const image = teamMembersForSite.results[i].picture.large;
     const fullName = `${firstName} ${lastName}`;
     const jobTitle = jobTitles[i];
-    const aboutMe = aboutMeSnippits[i];
+    const aboutMe = tampaAboutMeSnippits[i];
     aboutMeHolder.innerHTML = aboutMe;
     jobTitleHolder.innerHTML = jobTitle;
     createList.append(jobTitleHolder, aboutMeHolder);
@@ -110,11 +172,11 @@ const getTampaTeamInfo = async () => {
 };
 
 houstonButton.addEventListener("click", (e) => {
-  getTeamInfo();
+  getHoustonTeamInfo();
 });
 
 atlantaButton.addEventListener("click", (e) => {
-  getTeamInfo();
+  getAtlantaTeamInfo();
 });
 
 tampaButton.addEventListener("click", (e) => {

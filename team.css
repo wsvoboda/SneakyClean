@@ -45,6 +45,10 @@ h3 {
   color: #132880;
 }
 
+.list-group-item {
+  color: #050a30;
+}
+
 /* styling for smartphone */
 @media screen and (max-width: 415px) {
   h3 {
