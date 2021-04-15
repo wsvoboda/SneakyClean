@@ -75,6 +75,10 @@ header {
   align-items: center;
 }
 
+button:hover {
+  background-color: #132880 !important;
+}
+
 /* styling for smartphone */
 @media screen and (max-width: 415px) {
   h3 {
