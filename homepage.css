@@ -30,8 +30,8 @@ img {
   box-shadow: none;
 }
 
-#bootsblurb {
-  margin-left: 20px;
+.boots {
+  margin-left: -64px;
 }
 
 h3 {
@@ -135,6 +135,10 @@ button:hover {
 
   #bootsblurb {
     margin-left: auto;
+  }
+
+  .boots {
+    margin: auto;
   }
 }
 
