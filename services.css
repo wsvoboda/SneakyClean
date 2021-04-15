@@ -22,7 +22,7 @@ h2 {
 #order-form {
   border: 1px solid rgb(19, 40, 128, 0.35);
   border-radius: 2px;
-  padding: 0 100px;
+  padding: 0 5%;
   margin: 30px 150px 30px 150px;
   color: #050a30;
 }
