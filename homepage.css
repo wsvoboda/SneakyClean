@@ -1,15 +1,14 @@
 .nav-link {
-  color: black;
+  color: #2685f0;
 }
-
-.arrow {
-  width: 140px;
-  height: 100px;
+span {
+  color: #132880;
 }
 
 #stars {
   width: 120px;
   height: 80px;
+  box-shadow: none;
 }
 
 .logos {
@@ -22,10 +21,30 @@ img {
   height: 350px;
   width: 500px;
   border-radius: 3px;
+  -webkit-box-shadow: 0 10px 6px -6px #65acf0;
+  -moz-box-shadow: 0 10px 6px -6px #65acf0;
+  box-shadow: 0 10px 6px -6px #65acf0;
+}
+
+#logo {
+  box-shadow: none;
 }
 
 h3 {
   margin: 20px 200px;
+}
+
+h1 {
+  color: #132880;
+  font-size: 40px !important;
+}
+
+p {
+  color: #050a30;
+}
+
+h5 {
+  color: #050a30;
 }
 
 #locations {
@@ -38,9 +57,9 @@ h3 {
 }
 
 header {
-  -webkit-box-shadow: 0 5px 3px -3px #777;
-  -moz-box-shadow: 0 5px 3px -3px #777;
-  box-shadow: 0 5px 3px -3px #777;
+  -webkit-box-shadow: 0 5px 3px -3px #132880;
+  -moz-box-shadow: 0 5px 3px -3px #132880;
+  box-shadow: 0 5px 3px -3px #132880;
 }
 
 #logo {

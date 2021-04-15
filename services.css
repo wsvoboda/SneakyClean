@@ -1,5 +1,13 @@
 .nav-link {
-  color: black;
+  color: #2685f0;
+}
+
+span {
+  color: #132880;
+}
+
+h2 {
+  color: #132880;
 }
 
 #collectables-img {
@@ -11,17 +19,20 @@
 }
 
 #order-form {
-  border: 1px black solid;
+  border: 1px solid rgb(19, 40, 128, 0.35);
   border-radius: 2px;
   padding: 0 100px;
   margin: 30px 150px 30px 150px;
+  color: #050a30;
 }
 
 .card {
   margin: 10px;
-  -webkit-box-shadow: 0 10px 6px -6px #777;
-  -moz-box-shadow: 0 10px 6px -6px #777;
-  box-shadow: 0 10px 6px -6px #777;
+  -webkit-box-shadow: 0 10px 6px -6px #65acf0;
+  -moz-box-shadow: 0 10px 6px -6px #65acf0;
+  box-shadow: 0 10px 6px -6px #65acf0;
+  border: 1px solid rgb(19, 40, 128, 0.35);
+  color: #050a30;
 }
 
 #expdate {
@@ -29,9 +40,9 @@
 }
 
 header {
-  -webkit-box-shadow: 0 5px 3px -3px #777;
-  -moz-box-shadow: 0 5px 3px -3px #777;
-  box-shadow: 0 5px 3px -3px #777;
+  -webkit-box-shadow: 0 5px 3px -3px #132880;
+  -moz-box-shadow: 0 5px 3px -3px #132880;
+  box-shadow: 0 5px 3px -3px #132880;
 }
 
 #logo {

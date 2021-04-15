@@ -10,11 +10,13 @@
   align-items: center;
   text-align: center;
 }
+
 #atlanta-map {
   height: 400px;
   width: 100%;
   /* margin-left: 20px; */
 }
+
 #tampa-map {
   height: 400px;
   width: 100%;
@@ -22,11 +24,16 @@
 }
 
 .nav-link {
-  color: black;
+  color: #2685f0;
+}
+
+span {
+  color: #132880;
 }
 
 input[type="text"] {
   margin-right: 5px;
+  outline: #132880;
 }
 
 p {
@@ -39,16 +46,23 @@ button {
 
 h5 {
   margin: 20px;
+  color: #132880;
+}
+
+h4 {
+  margin: 30px;
+  color: #132880;
 }
 
 h2 {
   margin: 30px;
+  color: #132880;
 }
 
 header {
-  -webkit-box-shadow: 0 5px 3px -3px #777;
-  -moz-box-shadow: 0 5px 3px -3px #777;
-  box-shadow: 0 5px 3px -3px #777;
+  -webkit-box-shadow: 0 5px 3px -3px #132880;
+  -moz-box-shadow: 0 5px 3px -3px #132880;
+  box-shadow: 0 5px 3px -3px #132880;
 }
 
 #logo {
