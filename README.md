@@ -1,6 +1,6 @@
 # Sneaky Clean
 
-This site can be accessed using this link: https://wsvoboda.github.io/sneakyclean/
+This site can be accessed as a GitHub Page [here](https://wsvoboda.github.io/sneakyclean/).
 
 Sneaky Clean is a faux shoe-cleaning company that provides pickup and delivery to customers within a 50 mile radius of their physical locations.
 
@@ -64,6 +64,8 @@ This page is mobile responsive and utilizes Bootstrap framework for most styling
 ---
 
 My goal in creating this site was to use a framework for the majority of the styling. Styling using my own creative visions has not always resulted in the most aesthetically-pleasing product. I wanted to utilize a framework to help overcome these challenges! I am overall pleased with the result of this site. I look forward to being able to incorporate back-end functionality in order to impliment a shopping card and provide full functionality to some of my site's features.
+
+I wrote a short medium.com article about this project and the use of frameworks! [Check it out.](https://whitney-svoboda.medium.com/overcoming-framework-fears-fe3eceaad9dd)
 
 
 
